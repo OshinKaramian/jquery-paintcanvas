@@ -1,0 +1,21 @@
+Jquery-based PaintCanvas plugin
+
+Originally Written By: Oshin Karamian
+-----------------------------------------------------
+
+This README is just a simple guide to installation and an API.
+
+Installation:
+-----------------------------------------------------
+1. Pull jquery.paintcanvas.js down.
+2. Add references to jquery and jquery.paintcanvas.js.
+3. Call canvas element with .PaintCanvas() to initialize.
+
+API Documentation:
+-----------------------------------------------------
+
+Coming Soon!
+
+To Do:
+-----------------------------------------------------
+1. Add a minified version to repo.
