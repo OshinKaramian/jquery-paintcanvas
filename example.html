@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Canvas Painter</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
+	<script src="jquery.paintcanvas.js" type="text/javascript"></script>
+	<style type="text/css"></style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var canvasPainter = 
+				$('#canvas').PaintCanvas({ 
+					offsetPos: { x: 0, y: 0 },
+					onMouseMove: function(curPos) { },
+					onMouseDown: function(startPos){ } 
+				});
+
+			$("#clear").click(function(){ 
+				canvasPainter.ClearScreen();
+			});
+
+			$("#setred").click(function(){ 
+				canvasPainter.SetColor("#ff0000");
+			});
+
+			$("#setblack").click(function(){ 
+				canvasPainter.SetColor("#000000");
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<div class="paint" >
+		<canvas id="canvas" width="400" height="400" style="border: 1px black solid"></canvas>
+	</div>
+	<input type="button" id="clear" value="Clear">
+	<input type="button" id="setred" value="Color Red">
+	<input type="button" id="setblack" value="Color black">
+</div>
+</body>
+</html>
+
